@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <CustomActionGroup Location="Microsoft.SharePoint.SiteSettings"
+                   Title="SP SIN"
+                   Id="SPSIN"
+                   
+                     >
+
+  </CustomActionGroup>
+  <CustomAction Title="SP SIN on the web"
+                Location="Microsoft.SharePoint.SiteSettings"
+                GroupId="SPSIN"
+               >
+    <UrlAction Url="http://spsin.com/"/>
+  </CustomAction>
+  <CustomAction Title="Manage Resources"
+                Location="Microsoft.SharePoint.SiteSettings"
+                GroupId="SPSIN"
+               >
+    <UrlAction Url="~site/SPSINResources"/>
+  </CustomAction>
+  <CustomAction Title="Configuration Packages"
+                Location="Microsoft.SharePoint.SiteSettings"
+                GroupId="SPSIN"
+               >
+    <UrlAction Url="~site/_layouts/SPSIN/ConfigurationWizard.aspx"/>
+  </CustomAction>
+  <Control ControlAssembly="SPSIN, Version=1.0.0.0, Culture=neutral, PublicKeyToken=29a1bc68ea6f4b3b"
+           ControlClass="SPSIN.SPSINSiteSettingsIconFix"
+           Id="AdditionalPageHead"/>
+</Elements>

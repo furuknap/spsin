@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Url="SPSINResources"
+                Title="SPSIN Resources">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Content Type">Script Resource</Field>
+          <Field Name="Title">SPServices 0.7.2 CDN (cdnjs.com) All Pages</Field>
+          <Field Name="Resource Address">http://cdnjs.cloudflare.com/ajax/libs/jquery.SPServices/0.7.2/jquery.SPServices-0.7.2.min.js</Field>
+          <Field Name="Evaluation Order">11</Field>
+        </Row>
+        <Row>
+          <Field Name="Content Type">Script Resource</Field>
+          <Field Name="Title">jQuery 1.8.2 CDN (cdnjs.com) All Pages</Field>
+          <Field Name="Resource Address">http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.2/jquery.min.js</Field>
+          <Field Name="Evaluation Order">10</Field>
+        </Row>
+      </Rows>
+    </Data>
+  </ListInstance>
+</Elements>

@@ -1,0 +1,129 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4192F038-A440-47ED-90F1-A6D6E681A25C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SPSIN</RootNamespace>
+    <AssemblyName>SPSIN</AssemblyName>
+    <ProjectTypeGuids>{349C5851-65DF-11DA-9384-00065B846F21};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>SPSIN.snk</AssemblyOriginatorKeyFile>
+    <TargetFrameworkVersion>3.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>GAC\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>GAC\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.SharePoint, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Setup\2007DLL\Microsoft.SharePoint.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Windows\Microsoft.NET\Framework\v2.0.50727\System.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConfigurationPackageHandler.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SharePointRoot\Template\Features\SPSINConfigPkgjQueryLatest\SPSINConfigPkgjQueryLatestReceiver.cs" />
+    <Compile Include="SharePointRoot\Template\Features\SPSINConfigPkgSPServices\SPSINConfigPkgSPServicesReceiver.cs" />
+    <Compile Include="SharePointRoot\Template\Features\SPSINCoreContentTypes\SPSINCoreContentTypesReceiver.cs" />
+    <Compile Include="SharePointRoot\Template\Features\SPSINCoreContentTypes\SPSINScriptResourceHandler.cs" />
+    <Compile Include="SharePointRoot\Template\Features\SPSINCoreContentTypes\SPSINStyleSheetResourceHandler.cs" />
+    <Compile Include="SharePointRoot\Template\Features\SPSINDelegateControl\SPSINDelegateControl.cs" />
+    <Compile Include="SharePointRoot\Template\Features\SPSINDelegateControl\SPSINDelegateControlReceiver.cs" />
+    <Compile Include="SharePointRoot\Template\Features\SPSINResourceList\SPSINResourceListReceiver.cs" />
+    <Compile Include="SharePointRoot\Template\Features\SPSINSetup\SPSINSetupReceiver.cs" />
+    <Compile Include="SharePointRoot\Template\Features\SPSINSiteSettings\SPSINSiteSettingsIconFix.cs" />
+    <Compile Include="SharePointRoot\Template\Features\SPSINSiteSettings\SPSINSiteSettingsReceiver.cs" />
+    <Compile Include="SharePointRoot\Template\LAYOUTS\SPSIN\ConfigurationWizard.aspx.cs">
+      <DependentUpon>ConfigurationWizard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SINCycleReceiver.cs" />
+    <Compile Include="SPSINResourceHandlerCore.cs" />
+    <Compile Include="Utilities.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GAC\SPSIN.SandboxSolutionSupport.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="GAC\SPSIN.SandboxSolutionSupport.pdb" />
+    <Content Include="Manifest.Config" />
+    <Content Include="SharePointRoot\Template\Features\SPSINConfigPkgjQueryLatest\elements.xml" />
+    <Content Include="SharePointRoot\Template\Features\SPSINConfigPkgjQueryLatest\feature.xml" />
+    <Content Include="SharePointRoot\Template\Features\SPSINConfigPkgSPServices\elements.xml" />
+    <Content Include="SharePointRoot\Template\Features\SPSINConfigPkgSPServices\feature.xml" />
+    <Content Include="SharePointRoot\Template\Features\SPSINCoreContentTypes\contenttypes.xml" />
+    <Content Include="SharePointRoot\Template\Features\SPSINCoreContentTypes\feature.xml" />
+    <Content Include="SharePointRoot\Template\Features\SPSINCoreContentTypes\fields.xml" />
+    <Content Include="SharePointRoot\Template\Features\SPSINDelegateControl\elements.xml" />
+    <Content Include="SharePointRoot\Template\Features\SPSINDelegateControl\feature.xml" />
+    <Content Include="SharePointRoot\Template\Features\SPSINResourceList\elements.xml" />
+    <Content Include="SharePointRoot\Template\Features\SPSINResourceList\feature.xml" />
+    <Content Include="SharePointRoot\Template\Features\SPSINSetup\elements.xml" />
+    <Content Include="SharePointRoot\Template\Features\SPSINSetup\feature.xml" />
+    <Content Include="SharePointRoot\Template\Features\SPSINSiteSettings\elements.xml" />
+    <Content Include="SharePointRoot\Template\Features\SPSINSiteSettings\feature.xml" />
+    <Content Include="SharePointRoot\Template\LAYOUTS\SPSIN\ConfigurationWizard.aspx" />
+    <Content Include="SharePointRoot\Template\LAYOUTS\SPSIN\IMAGES\SPSINIcon48x48.png" />
+    <Content Include="SPSIN.SandboxSolutionSupport.dll" />
+    <Content Include="SPSIN.SandboxSolutionSupport.pdb" />
+    <None Include="SPSIN.snk" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349C5851-65DF-11DA-9384-00065B846F21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>62310</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

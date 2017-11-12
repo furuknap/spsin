@@ -1,0 +1,29 @@
+Version 1.2.3
+Added: Default resource types (script and style sheets) now support ~site and ~sitecollection tokens in resource URLs (actually added in 1.2.2)
+Fixed: Issue with default evaluation of resources (was default Off unless there are SIN Cycle receivers installed, now ON)
+
+Version 1.2.2
+Fixed: Changed access to resource list from using name to using ID
+
+Version 1.2.1
+Fixed: Missing handling of BeforeResourceItemShouldLoadEvaluation SIN Cycle event
+
+Version 1.2
+Added: SIN Cycle plugin framework. Developers can now add a class that inherits from SINCycleReceiver to inject code into the SP SIN request cycle.
+Added: Support for sandbox solutions as configuration packages. Sandbox solutions must be web scoped. 
+Modified: SP SIN now build against version 12.0.0.0 of Microsoft.SharePoint.dll, meaning it will work with SharePoint 2007. 
+Modified: Removed ImageURL from Site Settings custom action to maintain compatibility with SP2007. Site settings icon now injected with delegate control.
+Fixed: Removed duplicate EvaluationOrder view field in case of deactivating and reactivating SP SIN on same site.
+
+
+Version 1.1
+Added: Support for evaluation order. 
+Sorting is now based on default view for resource list (default set up to sort by Evaluation Order column). You can change the default view to modify evaluation order behavior. 
+NOTE: To upgrade from 1.0.0 and support Evaluation Order column, add new site column manually to content type SPSINScriptResource. Use column type Number. Set the name initially to EvaluationOrder (without space) but feel free to change it later. You can then set up the default view of the resource list to sort by this column if you want. 
+
+Added: Utility methods for GetResourceListServerRelativeURL and GetResourceListAbsoluteURL (useful for linking directly to resource list)
+
+Fixed: Missing configuration in out-of-the-box jQuery configuration package
+
+Version 1.0
+Initial Release

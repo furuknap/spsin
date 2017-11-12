@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Url="SPSINResources"
+                Title="SPSIN Resources">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Content Type">Script Resource</Field>
+          <Field Name="Title">Latest jQuery from CDN (code.jquery.com) All Pages</Field>
+          <Field Name="Resource Address">http://code.jquery.com/jquery.min.js</Field>
+          <Field Name="Evaluation Order">10</Field>
+        </Row>
+      </Rows>
+    </Data>
+  </ListInstance>
+</Elements>

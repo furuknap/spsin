@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ContentType ID="0x01005288A3160BABA04DAA0B8A015A3D4901" Name="SPSINScriptResource" Group="SPSIN" Version="4" Hidden="TRUE">
+    <Folder TargetName="_cts/SPSINScriptResource" />
+    <FieldRefs>
+      <FieldRef DisplayName="Resource Address" Required="FALSE" ID="{d08ee733-1c8d-43b4-b597-c14c96328fbd}"/>
+      <FieldRef DisplayName="URL Filter" Required="FALSE" ID="{044c8393-53c3-467c-91f4-2c875212e706}"/>
+      <FieldRef DisplayName="Evaluation Order" Required="FALSE" ID="{2c8a7595-b1d4-4308-b3b7-c21ba225ed2f}"/>
+    </FieldRefs>
+  </ContentType>
+  <ContentType ID="0x01005288A3160BABA04DAA0B8A015A3D490101" Name="Script Resource" Group="SPSIN" Version="0">
+    <FieldRefs></FieldRefs>
+    <XmlDocuments>
+      <XmlDocument NamespaceURI="http://schemas.spsin.com/Resource">
+        <ScriptResourceReceiver>
+          <ReceiverAssembly>SPSIN, Version=1.0.0.0, Culture=neutral, PublicKeyToken=29a1bc68ea6f4b3b</ReceiverAssembly>
+          <ReceiverClass>SPSIN.Handlers.ScriptResourceHandler</ReceiverClass>
+        </ScriptResourceReceiver>
+      </XmlDocument>
+    </XmlDocuments>
+  </ContentType>
+  <ContentType ID="0x01005288A3160BABA04DAA0B8A015A3D490102" Name="Style Sheet Resource" Group="SPSIN" Version="0">
+    <FieldRefs></FieldRefs>
+    <XmlDocuments>
+      <XmlDocument NamespaceURI="http://schemas.spsin.com/Resource">
+        <ScriptResourceReceiver>
+          <ReceiverAssembly>SPSIN, Version=1.0.0.0, Culture=neutral, PublicKeyToken=29a1bc68ea6f4b3b</ReceiverAssembly>
+          <ReceiverClass>SPSIN.Handlers.StyleSheetResourceHandler</ReceiverClass>
+        </ScriptResourceReceiver>
+      </XmlDocument>
+    </XmlDocuments>
+  </ContentType>
+</Elements>

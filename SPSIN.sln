@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SPSIN", "SPSIN\SPSIN.csproj", "{4192F038-A440-47ED-90F1-A6D6E681A25C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C9BF5696-2D72-48F1-B9B7-BED7ECDAADDE}"
+	ProjectSection(SolutionItems) = preProject
+		changelog.txt = changelog.txt
+		version.txt = version.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SandboxSolutionSupport", "SandboxSolutionSupport\SandboxSolutionSupport.csproj", "{FA3BFA68-0625-4069-84FB-58191DFABD0A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4192F038-A440-47ED-90F1-A6D6E681A25C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4192F038-A440-47ED-90F1-A6D6E681A25C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4192F038-A440-47ED-90F1-A6D6E681A25C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4192F038-A440-47ED-90F1-A6D6E681A25C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA3BFA68-0625-4069-84FB-58191DFABD0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA3BFA68-0625-4069-84FB-58191DFABD0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA3BFA68-0625-4069-84FB-58191DFABD0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA3BFA68-0625-4069-84FB-58191DFABD0A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		VisualSVNWorkingCopyRoot = .
+	EndGlobalSection
+EndGlobal

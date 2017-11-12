@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature  Id="0d3ea6d3-6fda-4466-a35d-27f888160ad1"
+          Title="SPSINCoreContentTypes"
+          Description="Description for SPSINCoreContentTypes"
+          Version="1.0.0.0"
+          Hidden="TRUE"
+          Scope="Site"
+          DefaultResourceFile="core"
+          ReceiverAssembly="SPSIN, Version=1.0.0.0, Culture=neutral, PublicKeyToken=29a1bc68ea6f4b3b"
+          ReceiverClass="SPSIN.EventHandlers.Features.SPSINCoreContentTypesReceiver"
+          xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ElementManifests>
+    <ElementManifest Location="fields.xml"/>
+    <ElementManifest Location="contenttypes.xml"/>
+  </ElementManifests>
+</Feature>

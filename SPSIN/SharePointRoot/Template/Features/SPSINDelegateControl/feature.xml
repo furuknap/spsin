@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature  Id="57985636-1626-4b31-9319-bf9931d904a8"
+          Title="SPSINDelegateControl"
+          Description="Description for SPSINDelegateControl"
+          Version="1.0.0.0"
+          Hidden="TRUE"
+          Scope="Web"
+          DefaultResourceFile="core"
+          ReceiverAssembly="SPSIN, Version=1.0.0.0, Culture=neutral, PublicKeyToken=29a1bc68ea6f4b3b"
+          ReceiverClass="SPSIN.EventHandlers.Features.SPSINDelegateControlReceiver"
+          xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ElementManifests>
+    <ElementManifest Location="elements.xml"/>    
+  </ElementManifests>
+</Feature>

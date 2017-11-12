@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature  Id="abed4771-0c6e-4730-ba4e-0598d808a764"
+          Title="SP SIN Setup"
+          Description="Activates SP SIN (SharePoint Script/Style Sheet Injector) on this site. After activating, configure SP SIN through the Site Settings page."
+          Version="1.0.0.0"
+          Hidden="FALSE"
+          Scope="Web"
+          DefaultResourceFile="core"
+          ReceiverAssembly="SPSIN, Version=1.0.0.0, Culture=neutral, PublicKeyToken=29a1bc68ea6f4b3b"
+          ReceiverClass="SPSIN.EventHandlers.Features.SPSINSetupReceiver"
+          xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ElementManifests>
+    <ElementManifest Location="elements.xml"/>    
+  </ElementManifests>
+</Feature>

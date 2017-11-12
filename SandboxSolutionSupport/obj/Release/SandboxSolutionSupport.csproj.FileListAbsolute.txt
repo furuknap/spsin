@@ -1,0 +1,6 @@
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\SPSIN\SandboxSolutionSupport\bin\Release\GAC\SPSIN.SandboxSolutionSupport.dll
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\SPSIN\SandboxSolutionSupport\bin\Release\SPSIN.SandboxSolutionSupport.dll
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\SPSIN\SandboxSolutionSupport\bin\Release\SPSIN.SandboxSolutionSupport.pdb
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\SPSIN\SandboxSolutionSupport\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\SPSIN\SandboxSolutionSupport\obj\Release\SPSIN.SandboxSolutionSupport.dll
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\SPSIN\SandboxSolutionSupport\obj\Release\SPSIN.SandboxSolutionSupport.pdb

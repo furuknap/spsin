@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature  Id="551798cc-de02-440a-815a-941387b39c11"
+          Title="SPSINConfigPkgSPServices"
+          Description="Description for SPSINConfigPkgSPServices"
+          Version="1.0.0.0"
+          Hidden="TRUE"
+          Scope="Web"
+          DefaultResourceFile="core"
+          ReceiverAssembly="SPSIN, Version=1.0.0.0, Culture=neutral, PublicKeyToken=29a1bc68ea6f4b3b"
+          ReceiverClass="SPSIN.EventHandlers.Features.SPSINConfigPkgSPServicesReceiver"
+          xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ElementManifests>
+    <ElementManifest Location="elements.xml"/>    
+  </ElementManifests>
+  <Properties>
+    <Property Key="SPSIN_ConfigPackage_Title" Value="jQuery 1.8.2 and SPServices 0.7.2 from cdnjs.com CDN on all pages"/>
+    <Property Key="SPSIN_ConfigPackage_Description" Value="This package will add the minified jQuery 1.8.2 script framework and SPServices 0.7.2 on all pages. The script will be loaded directly from code.jquery.com so it will not add local files to your installation."/>
+  </Properties>
+</Feature>

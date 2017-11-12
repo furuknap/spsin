@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature  Id="4bac6e44-2879-45b7-93a7-750978ae0c9a"
+          Title="SPSINConfigPkgjQueryLatest"
+          Description="Description for SPSINConfigPkgjQueryLatest"
+          Version="1.0.0.0"
+          Hidden="TRUE"
+          Scope="Web"
+          DefaultResourceFile="core"
+          ReceiverAssembly="SPSIN, Version=1.0.0.0, Culture=neutral, PublicKeyToken=29a1bc68ea6f4b3b"
+          ReceiverClass="SPSIN.EventHandlers.Features.SPSINConfigPkgjQueryLatestReceiver"
+          xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ElementManifests>
+    <ElementManifest Location="elements.xml"/>    
+  </ElementManifests>
+  <Properties>
+    <Property Key="SPSIN_ConfigPackage_Title" Value="Latest jQuery from code.jquery.com CDN on all pages"/>
+    <Property Key="SPSIN_ConfigPackage_Description" Value="This package will add the latest minified jQuery script framework on all pages. The script will be loaded directly from code.jquery.com so it will not add local files to your installation. Be aware that you may not always want to load the latest version of any script due to possible future breaking changes."/>
+  </Properties>
+</Feature>

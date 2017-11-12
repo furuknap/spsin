@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field Type="Text"
+         DisplayName="Resource Address"
+         Required="FALSE"
+         Indexed="FALSE"
+         MaxLength="255"
+         Group="SPSIN"
+         ID="{d08ee733-1c8d-43b4-b597-c14c96328fbd}"
+         StaticName="ResourceAddress"
+         Name="ResourceAddress"/>
+  <Field Type="Text"
+         DisplayName="URL Filter"
+         Required="FALSE"
+         Indexed="FALSE"
+         MaxLength="255"
+         Group="SPSIN"
+         ID="{044c8393-53c3-467c-91f4-2c875212e706}"
+         StaticName="URLFilter"
+         Name="URLFilter"/>
+  <Field Type="Number"
+         DisplayName="Evaluation Order"
+         Required="FALSE"
+         Indexed="FALSE"
+         Min="0"
+         Decimals="0"
+         Group="SPSIN"
+         ID="{2c8a7595-b1d4-4308-b3b7-c21ba225ed2f}"
+         StaticName="EvaluationOrder"
+         Name="EvaluationOrder"
+         Description="Priority for evaluation of SP SIN resource types. Higher numbers are evaluated later and output will thus appear later in the page."
+         Percentage="FALSE"/>
+</Elements>
